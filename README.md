@@ -6,7 +6,7 @@
 - 提供给喜欢和我一样用md格式编写漏洞报告的师傅
 - 专注于漏洞挖掘，减少报告格式与上传图片等问题带来的烦恼
 
-##  [✨](https://emojipedia.org/sparkles/)使用
+##  [💖](https://emojipedia.org/sparkles/)使用
 
 确保`convert.py`同级下有`old_file`和`new_file`两个文件夹
 
