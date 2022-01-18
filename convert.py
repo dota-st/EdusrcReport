@@ -51,8 +51,10 @@ def upload_img(file_name):
         img_name = re.search(pattern, i).group()
         res = requests.post(url="https://src.sjtu.edu.cn/upload-images/", headers=headers, data={'name': img_name}, files ={"file": open(real_file,"rb")}, verify=False)
         result = json.loads(res.text)
-        img_path = "https://src.sjtu.edu.cn" + result["url"]
-        print(f"\033[1;35m[+]{file_name} upload success! >> \033[0m" + img_path)
+        up_img = result["url"]
+        img_url = "https://src.sjtu.edu.cn" + up_img
+        print(f"\033[1;35m[+]{file_name} upload success! >> \033[0m" + img_url)
+        img_path = f"![{img_name}]" + f"({up_img})"
         img_path_list.append(img_path)
     return img_path_list
     
