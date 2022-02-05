@@ -54,7 +54,7 @@ def upload_img(file_name):
         up_img = result["url"]
         img_url = "https://src.sjtu.edu.cn" + up_img
         print(f"\033[1;35m[+]{file_name} upload success! >> \033[0m" + img_url)
-        img_path = f"![{img_name}]" + f"({up_img})"
+        img_path = f"![{img_name}]" + f"({img_url})"
         img_path_list.append(img_path)
     return img_path_list
     
